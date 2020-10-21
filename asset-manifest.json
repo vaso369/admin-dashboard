@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/admin-dashboard/static/css/main.3c8d74d1.chunk.css",
+    "main.js": "/admin-dashboard/static/js/main.7cf133f1.chunk.js",
+    "main.js.map": "/admin-dashboard/static/js/main.7cf133f1.chunk.js.map",
+    "runtime-main.js": "/admin-dashboard/static/js/runtime-main.e3032649.js",
+    "runtime-main.js.map": "/admin-dashboard/static/js/runtime-main.e3032649.js.map",
+    "static/css/2.267f6ae4.chunk.css": "/admin-dashboard/static/css/2.267f6ae4.chunk.css",
+    "static/js/2.41b1c725.chunk.js": "/admin-dashboard/static/js/2.41b1c725.chunk.js",
+    "static/js/2.41b1c725.chunk.js.map": "/admin-dashboard/static/js/2.41b1c725.chunk.js.map",
+    "index.html": "/admin-dashboard/index.html",
+    "precache-manifest.9a4adbb81eab08f05c8d7d687c56eae7.js": "/admin-dashboard/precache-manifest.9a4adbb81eab08f05c8d7d687c56eae7.js",
+    "service-worker.js": "/admin-dashboard/service-worker.js",
+    "static/css/2.267f6ae4.chunk.css.map": "/admin-dashboard/static/css/2.267f6ae4.chunk.css.map",
+    "static/css/main.3c8d74d1.chunk.css.map": "/admin-dashboard/static/css/main.3c8d74d1.chunk.css.map",
+    "static/js/2.41b1c725.chunk.js.LICENSE.txt": "/admin-dashboard/static/js/2.41b1c725.chunk.js.LICENSE.txt",
+    "static/media/design.png": "/admin-dashboard/static/media/design.212c5f9f.png",
+    "static/media/Login.scss": "/admin-dashboard/static/media/loginBackground.ca2951b9.svg",
+    "static/media/more-news.svg": "/admin-dashboard/static/media/more-news.058810c9.svg",
+    "static/media/project.svg": "/admin-dashboard/static/media/project.39f1b26f.svg",
+    "static/media/search.svg": "/admin-dashboard/static/media/search.4699a34f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3032649.js",
+    "static/css/2.267f6ae4.chunk.css",
+    "static/js/2.41b1c725.chunk.js",
+    "static/css/main.3c8d74d1.chunk.css",
+    "static/js/main.7cf133f1.chunk.js"
+  ]
+}
