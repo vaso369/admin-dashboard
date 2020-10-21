@@ -1,0 +1,17 @@
+.main {
+  min-height: calc(100vh - 6vh);
+  flex-grow: 1;
+  background: #d1d3d4;
+  max-width: calc(100% - (2 * 16.666667%)); }
+  @media (max-device-width: 767px) {
+    .main > div {
+      justify-content: center !important; } }
+  @media (max-device-width: 767px) {
+    .main {
+      max-width: 100%; } }
+  @media (min-device-width: 768px) and (max-device-width: 1199px) {
+    .main {
+      max-width: 75%; } }
+  @media only screen and (orientation: landscape) and (max-width: 1024px) {
+    .main {
+      max-width: 100%; } }

@@ -1,0 +1,94 @@
+@import '../../styles/color_vars_.scss';
+@import '../../styles/typography_vars_.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  width: 100%;
+  min-height: 6vh;
+
+  display: flex;
+  @include darkTheme {
+    background: $light-blue;
+  }
+
+  //light theme specific styling
+  @include lightTheme {
+    background-color: $gray-secondary;
+    color: $gray;
+  }
+  &-logo {
+    background-color: $orange;
+    height: inherit;
+    text-align: center;
+    h1 {
+      @include dashboard-h1();
+
+      color: $dark-blue;
+      @include breakpoint(0px, 767px) {
+        @include darkTheme {
+          color: #fff !important;
+        }
+
+        //light theme specific styling
+        @include lightTheme {
+          color: $light-blue;
+        }
+      }
+    }
+    @include breakpoint(0px, 767px) {
+      @include darkTheme {
+        background: $dark-blue;
+        color: #fff !important;
+      }
+
+      //light theme specific styling
+      @include lightTheme {
+        background-color: $gray-secondary;
+        color: $gray;
+      }
+    }
+  }
+  &-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-user {
+      align-items: center;
+      justify-content: space-between;
+      color: $gray;
+      margin-right: 4vw;
+      min-width: 16vw;
+      p {
+        @include darkTheme {
+          color: $gray;
+        }
+
+        //light theme specific styling
+        @include lightTheme {
+          color: $dark-blue;
+        }
+        font-size: 1.3rem !important;
+        margin: 0;
+        @include breakpoint(0px, 767px) {
+          display: none;
+        }
+      }
+      @include breakpoint(0px, 767px) {
+        &.row {
+          margin-left: 0 !important;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    @include breakpoint(0px, 767px) {
+      margin: 0 !important;
+      padding: 5vw !important;
+    }
+    @include breakpoint(768px, 1199px) {
+      padding: 0.1vh 0 !important;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.choseTheme {
+  background: #e8e7e7; }
+  .choseTheme h1 {
+    font-size: 4rem;
+    padding: 10vh 0 0 0;
+    color: #174359; }
+  .choseTheme-wrapper {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .choseTheme-wrapper div {
+      cursor: pointer; }
+
+.active:after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 110%;
+  height: 120%;
+  background: #ffb275;
+  opacity: 0.3;
+  z-index: 1000;
+  cursor: pointer; }
+
+.next-button {
+  min-height: 20vh; }
+  .next-button button {
+    background: #174359;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem; }
+    @media (max-device-width: 1199px) {
+      .next-button button {
+        padding: 0.7rem 1.5rem;
+        font-size: 2rem; } }
+  .next-button img {
+    width: 1rem;
+    color: #fff !important; }
+  .next-button svg {
+    fill: #fff !important; }

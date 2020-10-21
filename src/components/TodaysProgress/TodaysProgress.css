@@ -1,0 +1,27 @@
+.todaysProgress {
+  background: #fff;
+  flex-grow: 1;
+  min-height: 50vh; }
+  .todaysProgress.col-xl-3 {
+    flex: 0 0 24%; }
+    @media only screen and (max-width: 767px) {
+      .todaysProgress.col-xl-3 {
+        flex: 0 0 100% !important;
+        margin-top: 1rem !important; } }
+    @media (min-device-width: 768px) and (max-device-width: 1199px) {
+      .todaysProgress.col-xl-3 {
+        flex: 0 0 100%; } }
+  @media (max-device-width: 575px) {
+    .todaysProgress {
+      min-height: auto;
+      padding-bottom: 4vh;
+      min-height: 30vh !important; }
+      .todaysProgress svg.recharts-surface {
+        margin-top: 1rem; } }
+  @media (max-device-width: 1199px) {
+    .todaysProgress {
+      overflow: hidden; } }
+  @media (min-device-width: 768px) and (max-device-width: 1199px) {
+    .todaysProgress {
+      min-height: 20vh;
+      margin-top: 1rem !important; } }

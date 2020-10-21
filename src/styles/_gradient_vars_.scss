@@ -1,0 +1,12 @@
+$gray-color-1: #ffffff;
+$gray-color-2: #d1d3d4;
+$dark-blue-color-2: #17224e;
+$dark-blue-color-1: rgba(#ffffff, 0.00);
+$orange-color-2: #ffffff;
+$dark-blue: gradient(-90deg, $dark-blue-color-1 0%, $dark-blue-color-2 100%);
+$dark-blue-reversed: gradient(-90deg, $dark-blue-color-2 100%, $dark-blue-color-1 0%);
+$orange-color-1: #ec5525;
+$orange: gradient(-90deg, $orange-color-1 0%, $orange-color-2 100%);
+$orange-reversed: gradient(-90deg, $orange-color-2 100%, $orange-color-1 0%);
+$gray: gradient(90deg, $gray-color-1 0%, $gray-color-2 100%);
+$gray-reversed: gradient(90deg, $gray-color-2 100%, $gray-color-1 0%);

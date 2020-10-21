@@ -1,0 +1,59 @@
+@import '../../styles/color_vars_';
+@import '../../styles/mixins';
+
+.choseTheme {
+  background: $gray-secondary;
+
+  h1 {
+    font-size: 4rem;
+    padding: 10vh 0 0 0;
+    color: $dark-blue;
+  }
+  &-wrapper {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    div {
+      cursor: pointer;
+    }
+  }
+}
+// img
+.active {
+  &:after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    background: $orange;
+    opacity: 0.3;
+    z-index: 1000;
+    cursor: pointer;
+  }
+}
+.next-button {
+  min-height: 20vh;
+  button {
+    background: $dark-blue;
+
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    @include breakpoint(0px, 1199px) {
+      padding: 0.7rem 1.5rem;
+      font-size: 2rem;
+    }
+  }
+  img {
+    width: 1rem;
+    color: #fff !important;
+  }
+  svg {
+    fill: #fff !important;
+  }
+}

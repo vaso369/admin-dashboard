@@ -1,0 +1,56 @@
+.sidebar-nav {
+  height: 100%; }
+
+.dark-theme .sidebar-nav {
+  background-color: #1c5b7b; }
+
+.light-theme .sidebar-nav {
+  background-color: #d1d3d4; }
+
+.sidebar-nav h2 {
+  font-family: 'Roboto';
+  font-weight: 400px;
+  font-size: 1.5569rem;
+  border-bottom: 1px solid #fff;
+  line-height: 1.7; }
+
+.dark-theme .sidebar-nav h2 {
+  color: #d1d3d4; }
+
+.light-theme .sidebar-nav h2 {
+  color: #174359; }
+
+.sidebar-nav-section {
+  padding: 1vh 3vh; }
+
+.sidebar-nav-section hr {
+  color: #d1d3d4 !important; }
+
+.sidebar-nav-section-item {
+  min-height: 6vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 400px;
+  font-size: 1.3045rem; }
+
+.dark-theme .sidebar-nav-section-item {
+  color: #d1d3d4; }
+
+.light-theme .sidebar-nav-section-item {
+  color: #174359; }
+
+.sidebar-nav-section-item svg {
+  margin-right: 1vw; }
+
+@media (max-device-width: 767px) {
+  .sidebar-nav-section {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden; } }
+
+@media (max-device-width: 767px) {
+  .sidebar-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out; } }

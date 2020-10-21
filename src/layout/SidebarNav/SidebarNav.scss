@@ -1,0 +1,65 @@
+@import '../../styles/color_vars_.scss';
+@import '../../styles/typography_vars_.scss';
+@import '../../styles/mixins.scss';
+
+.sidebar-nav {
+  // background: $light-blue;
+  @include darkTheme {
+    background-color: $light-blue;
+  }
+
+  //light theme specific styling
+  @include lightTheme {
+    background-color: $gray;
+  }
+  height: 100%;
+  h2 {
+    @include dashboard-h2;
+
+    border-bottom: 1px solid #fff;
+    line-height: 1.7;
+    @include darkTheme {
+      color: $gray;
+    }
+
+    //light theme specific styling
+    @include lightTheme {
+      color: $dark-blue;
+    }
+  }
+  &-section {
+    padding: 1vh 3vh;
+    hr {
+      color: $gray !important;
+    }
+    &-item {
+      min-height: 6vh;
+      display: flex;
+      align-items: center;
+      @include dashboard-menu;
+      // color: $gray;
+      @include darkTheme {
+        color: $gray;
+      }
+
+      //light theme specific styling
+      @include lightTheme {
+        color: $dark-blue;
+      }
+      svg {
+        margin-right: 1vw;
+      }
+    }
+    @include breakpoint(0px, 767px) {
+      // display: none;
+      max-height: 0;
+      transition: max-height 0.15s ease-out;
+      overflow: hidden;
+    }
+  }
+  @include breakpoint(0px, 767px) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+  }
+}

@@ -1,0 +1,38 @@
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #1c5b7b; }
+
+.CircularProgressbar {
+  width: 50%;
+  height: 50%;
+  margin: 0px auto; }
+  @media (min-device-width: 768px) and (max-device-width: 1199px) {
+    .CircularProgressbar {
+      height: 67%; } }
+
+.CircleProgress {
+  width: 96%;
+  height: 66%;
+  display: flex;
+  align-items: flex-start; }
+  @media (max-device-width: 575px) {
+    .CircleProgress {
+      height: 76%;
+      width: 98%;
+      align-items: flex-start; } }
+  @media (min-device-width: 576px) and (max-device-width: 767px) {
+    .CircleProgress {
+      height: 46%;
+      width: 100%;
+      align-items: flex-start; } }
+  @media (min-device-width: 768px) and (max-device-width: 1199px) {
+    .CircleProgress {
+      height: 85%;
+      width: 50%;
+      align-items: center; } }
+
+@media (min-device-width: 768px) and (max-device-width: 1199px) {
+  .recharts-responsive-container {
+    width: 50% !important;
+    height: 86% !important; }
+  .recharts-wrapper {
+    max-height: 30vh !important; } }

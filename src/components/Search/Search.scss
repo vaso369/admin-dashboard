@@ -1,0 +1,20 @@
+@import '../../styles/_mixins';
+
+.formGroup {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  .inputForm {
+    width: 100%;
+    border-radius: 0 !important;
+  }
+}
+
+@include breakpoint(768px, 1199px) {
+  .header-nav .col-lg-8 {
+    flex: 0 0 22.666667% !important;
+    max-width: 22.666667% !important;
+  }
+}

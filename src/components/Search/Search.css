@@ -1,0 +1,14 @@
+.formGroup {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center; }
+  .formGroup .inputForm {
+    width: 100%;
+    border-radius: 0 !important; }
+
+@media (min-device-width: 768px) and (max-device-width: 1199px) {
+  .header-nav .col-lg-8 {
+    flex: 0 0 22.666667% !important;
+    max-width: 22.666667% !important; } }

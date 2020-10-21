@@ -1,0 +1,41 @@
+@import '../../styles/color_vars_';
+@import '../../styles/typography_vars_';
+@import '../../styles/mixins';
+
+.started-projects {
+  min-height: 41vh;
+  max-height: 41vh;
+
+  &-wrapper {
+    width: 100%;
+    height: 38vh;
+    overflow-y: scroll;
+  }
+  &-item {
+    display: flex;
+    padding: 1rem 2rem 0.5rem 2rem;
+    a {
+      color: $dark-blue;
+      font-weight: bold;
+      font-size: 1rem;
+      img {
+        margin-right: 1rem;
+      }
+      &:hover {
+        text-decoration: underline !important;
+      }
+      @include breakpoint(0px, 767px) {
+        font-size: 1.2323rem;
+      }
+    }
+    &-desc {
+      padding: 0rem 1.5rem 0rem 4rem;
+      @include breakpoint(0px, 1199px) {
+        padding: 0rem 1.5rem 0rem 5rem;
+      }
+    }
+  }
+  @include breakpoint(576px, 1199px) {
+    min-width: 60% !important;
+  }
+}

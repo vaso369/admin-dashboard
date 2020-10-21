@@ -1,0 +1,33 @@
+@import '../../styles/color_vars_';
+@import '../../styles/mixins';
+
+.todaysProgress {
+  background: #fff;
+  flex-grow: 1;
+  min-height: 50vh;
+  &.col-xl-3 {
+    flex: 0 0 24%;
+    @media only screen and (max-width: 767px) {
+      flex: 0 0 100% !important;
+      margin-top: 1rem !important;
+    }
+    @include breakpoint(768px, 1199px) {
+      flex: 0 0 100%;
+    }
+  }
+  @include breakpoint(0px, 575px) {
+    min-height: auto;
+    padding-bottom: 4vh;
+    min-height: 30vh !important;
+    & svg.recharts-surface {
+      margin-top: 1rem;
+    }
+  }
+  @include breakpoint(0px, 1199px) {
+    overflow: hidden;
+  }
+  @include breakpoint(768px, 1199px) {
+    min-height: 20vh;
+    margin-top: 1rem !important;
+  }
+}

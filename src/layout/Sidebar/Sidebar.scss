@@ -1,0 +1,15 @@
+@import '../../styles/color_vars_.scss';
+@import '../../styles/mixins.scss';
+
+.sidebar {
+  background: $gray;
+  min-height: calc(100vh - 6vh);
+  border-left: 6px solid $light-blue;
+  @include breakpoint(576px, 1199px) {
+    display: flex;
+    min-height: auto !important;
+  }
+  @include breakpoint(0px, 1199px) {
+    border-left: none;
+  }
+}
