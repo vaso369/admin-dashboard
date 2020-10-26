@@ -12,4 +12,7 @@
   @include breakpoint(0px, 1199px) {
     border-left: none;
   }
+  @include breakpoint(0px, 575px) {
+    min-height: 100vh !important;
+  }
 }

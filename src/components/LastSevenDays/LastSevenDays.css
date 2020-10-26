@@ -22,3 +22,8 @@
         width: 100% !important;
         height: 86% !important;
         transform: translate(0rem, 2.2rem); } }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .lastSevenDays > div:nth-of-type(2) {
+      height: 80vh !important; }
+    .lastSevenDays .recharts-responsive-container {
+      width: 109% !important; } }

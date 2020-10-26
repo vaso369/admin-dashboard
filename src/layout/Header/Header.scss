@@ -12,7 +12,6 @@
     background: $light-blue;
   }
 
-  //light theme specific styling
   @include lightTheme {
     background-color: $gray-secondary;
     color: $gray;
@@ -82,10 +81,23 @@
           margin-right: 0;
         }
       }
+      @media only screen and (max-width: 1000px) and (orientation: landscape) {
+        max-width: 50%;
+        flex-direction: row-reverse;
+      }
     }
     @include breakpoint(0px, 767px) {
       margin: 0 !important;
       padding: 5vw !important;
+    }
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      padding: 1vw !important;
+      .form {
+        max-width: 35%;
+      }
+      &-nav-user {
+        max-width: 20%;
+      }
     }
     @include breakpoint(768px, 1199px) {
       padding: 0.1vh 0 !important;

@@ -4,7 +4,6 @@
   flex-wrap: wrap; }
 
 .hero-text-wrapper, .hero-image-wrapper {
-  background: #e8e7e7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +37,7 @@
 
 @media (max-device-width: 1024px) {
   .hero-text h1 {
-    transform: translate(0, -2rem);
+    transform: translate(0, -1rem);
     margin-bottom: 0; } }
 
 .hero-text p {
@@ -46,8 +45,11 @@
 
 @media (max-device-width: 1024px) {
   .hero-text {
-    min-height: 52vh;
     justify-content: flex-start; } }
+
+@media (max-device-width: 575px) {
+  .hero-text {
+    min-height: 62vh !important; } }
 
 .hero-image {
   max-width: 100%;
@@ -149,3 +151,7 @@ form .form-block a {
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 1rem); } }
+
+@media (max-device-width: 575px) {
+  form .form-block {
+    max-height: 100vh; } }

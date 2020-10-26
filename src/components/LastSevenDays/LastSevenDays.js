@@ -6,7 +6,7 @@ import './LastSevenDays.scss'
 const LastSevenDays = () => (
   <div className="lastSevenDays col-12 col-lg-12 col-xl-12 mt-3" data-testid="LastSevenDays">
     <div className=" reusable-heading col-12">
-      <Bars fill="#d1d3d4" /> <h2>Last 7 days</h2>
+      <Bars fill="#d1d3d4" /> <h2>Последњих 7 дана</h2>
     </div>
     <LastSevenDaysBarChart />
   </div>

@@ -21,14 +21,14 @@ const SidebarNav = () => {
     >
       <div className="sidebar-nav" data-testid="SidebarNav">
         <div className="sidebar-nav-section pt-5">
-          <h2>Projects</h2>
+          <h2>Пројекти</h2>
           <Link to="/">
             <div className="sidebar-nav-section-item">
-              <Plus fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Add project
+              <Plus fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Додај пројекат
             </div>
           </Link>
           <div className="sidebar-nav-section-item">
-            <Users fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Workers{' '}
+            <Users fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Запослени{' '}
             <ArrowIcon
               fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'}
               className="ml-auto"
@@ -38,7 +38,7 @@ const SidebarNav = () => {
             />
           </div>
           <div className="sidebar-nav-section-item">
-            <Constraint fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Constraint{' '}
+            <Constraint fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Препреке{' '}
             <ArrowIcon
               fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'}
               className="ml-auto"
@@ -48,18 +48,18 @@ const SidebarNav = () => {
             />
           </div>
           <div className="sidebar-nav-section-item">
-            <Support fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Support
+            <Support fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Подршка
           </div>
         </div>
         <div className="sidebar-nav-section">
-          <h2>Statistics</h2>
+          <h2>Статистике</h2>
           <Link to="/">
             <div className="sidebar-nav-section-item">
-              <Plus fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Add statistics
+              <Plus fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Додај статистике
             </div>
           </Link>
           <div className="sidebar-nav-section-item">
-            <Users fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Management{' '}
+            <Users fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Менаџмент{' '}
             <ArrowIcon
               fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'}
               className="ml-auto"
@@ -69,7 +69,7 @@ const SidebarNav = () => {
             />
           </div>
           <div className="sidebar-nav-section-item">
-            <Support fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Support
+            <Support fill={theme === 'dark-theme' ? '#ffb275' : '#1c5b7b'} /> Подршка
           </div>
         </div>
       </div>

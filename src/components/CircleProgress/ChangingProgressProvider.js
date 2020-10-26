@@ -11,11 +11,6 @@ class ChangingProgressProvider extends React.Component {
 
   componentDidMount() {
     this.progress()
-    // setInterval(() => {
-    //   this.setState({
-    //     valuesIndex: (this.state.valuesIndex + 1) % this.props.values.length,
-    //   })
-    // }, this.props.interval)
   }
 
   progress = async () => {
@@ -28,14 +23,6 @@ class ChangingProgressProvider extends React.Component {
       })
     }
   };
-  //   shouldComponentUpdate(nextProps, nextState) {
-  //     console.log(nextProps, nextState)
-  //     console.log(this.props, this.state)
-  //     if (this.state.valuesIndex === 82) {
-  //       return false
-  //     }
-  //     return true
-  //   }
 
   render() {
     return this.props.children(this.props.values[this.state.valuesIndex])

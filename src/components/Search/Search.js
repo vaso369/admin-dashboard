@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Form, FormControl, FormGroup } from 'react-bootstrap'
-import searchIcon from '../../assets/icons/search.svg'
+// import searchIcon from '../../assets/icons/search.svg'
 import './Search.scss'
 
 const Search = (props) => {
@@ -32,8 +32,8 @@ const Search = (props) => {
   return (
     <Form inline className={`form col-12 col-lg-8 ${props.width}`} data-testid="Search">
       <FormGroup className="has-search formGroup no-gutters col-12 col-lg-12 col-xl-12">
-        <FormControl type="text" placeholder="Search" className="pl-5 inputForm col-12 col-xl-12" />
-        <img src={searchIcon} alt="search icon" style={style} />
+        <FormControl type="text" placeholder="Претрага" className="pl-5 inputForm col-12 col-xl-12" />
+        {/* <img src={searchIcon} alt="search icon" style={style} /> */}
       </FormGroup>
     </Form>
   )

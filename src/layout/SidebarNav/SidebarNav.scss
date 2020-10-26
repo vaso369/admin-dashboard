@@ -3,7 +3,6 @@
 @import '../../styles/mixins.scss';
 
 .sidebar-nav {
-  // background: $light-blue;
   @include darkTheme {
     background-color: $light-blue;
   }
@@ -37,7 +36,6 @@
       display: flex;
       align-items: center;
       @include dashboard-menu;
-      // color: $gray;
       @include darkTheme {
         color: $gray;
       }
@@ -51,7 +49,6 @@
       }
     }
     @include breakpoint(0px, 767px) {
-      // display: none;
       max-height: 0;
       transition: max-height 0.15s ease-out;
       overflow: hidden;

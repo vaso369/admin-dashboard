@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   &-text-wrapper,
   &-image-wrapper {
-    background: $gray-secondary;
+    // background: $gray-secondary;
     @include flex-center(row);
     object-fit: contain;
   }
@@ -33,7 +33,7 @@
       margin-bottom: 10vh;
       color: $dark-blue !important;
       @include breakpoint(0px, 1024px) {
-        transform: translate(0, -2rem);
+        transform: translate(0, -1rem);
         margin-bottom: 0;
       }
     }
@@ -41,8 +41,11 @@
       line-height: 2rem;
     }
     @include breakpoint(0px, 1024px) {
-      min-height: 52vh;
+      // min-height: 52vh;
       justify-content: flex-start;
+    }
+    @include breakpoint(0px, 575px) {
+      min-height: 62vh !important;
     }
   }
   &-image {
@@ -139,5 +142,8 @@ form .form-block {
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 1rem);
+  }
+  @include breakpoint(0px, 575px) {
+    max-height: 100vh;
   }
 }

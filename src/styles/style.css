@@ -47,7 +47,7 @@ button:focus {
   outline: none !important; }
 
 ::-webkit-scrollbar {
-  width: 12px; }
+  width: 0.75rem; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -137,9 +137,8 @@ button:focus {
   width: 10vw;
   height: 3vh; }
   .hamburger-menu > div {
-    height: 0.2vh;
+    height: 0.4rem;
     max-height: 0.5vh;
-    background: #d1d3d4;
     display: none; }
     @media (max-device-width: 767px) {
       .hamburger-menu > div {
@@ -149,6 +148,10 @@ button:focus {
       display: flex;
       flex-direction: column;
       justify-content: space-between; } }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .hamburger-menu {
+      width: 7vw !important;
+      height: 8vh !important; } }
 
 @media (max-device-width: 575px) {
   *,

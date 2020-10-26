@@ -62,7 +62,7 @@ button:focus {
 // Scroll bar
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 0.75rem;
 }
 
 /* Handle */
@@ -121,7 +121,7 @@ button:focus {
     color: #d1d3d4;
     font-family: 'Roboto';
     font-weight: 400px;
-    font-size: 1.3569rem; // 1.5569rem
+    font-size: 1.3569rem;
     margin: 0;
     margin-left: 0.5vw;
   }
@@ -166,9 +166,17 @@ button:focus {
   cursor: pointer;
   display: none;
   & > div {
-    height: 0.2vh;
+    height: 0.4rem;
     max-height: 0.5vh;
-    background: $gray;
+
+    // @include darkTheme {
+    //   background: $gray;
+    // }
+
+    // //light theme specific styling
+    // @include lightTheme {
+    //   background: $light-blue;
+    // }
     display: none;
     @include breakpoint(0px, 767px) {
       display: block;
@@ -176,10 +184,15 @@ button:focus {
   }
   width: 10vw;
   height: 3vh;
+
   @include breakpoint(0px, 767px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    width: 7vw !important;
+    height: 8vh !important;
   }
 }
 

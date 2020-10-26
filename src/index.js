@@ -1,7 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
-import 'react-app-polyfill/ie11'
-import 'react-app-polyfill/stable'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { HashRouter } from 'react-router-dom'

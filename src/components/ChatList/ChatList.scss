@@ -71,6 +71,9 @@
       max-width: 100%;
     }
   }
+  @media only screen and (max-width: 1199px) and (orientation: landscape) {
+    max-height: 100% !important;
+  }
 }
 
 .c-gray {

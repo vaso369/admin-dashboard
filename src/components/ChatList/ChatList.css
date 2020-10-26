@@ -68,5 +68,9 @@
     flex: 0 0 100%;
     max-width: 100%; } }
 
+@media only screen and (max-width: 1199px) and (orientation: landscape) {
+  .chat-list {
+    max-height: 100% !important; } }
+
 .c-gray {
   background: #727171; }

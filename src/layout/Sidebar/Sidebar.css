@@ -9,3 +9,6 @@
   @media (max-device-width: 1199px) {
     .sidebar {
       border-left: none; } }
+  @media (max-device-width: 575px) {
+    .sidebar {
+      min-height: 100vh !important; } }

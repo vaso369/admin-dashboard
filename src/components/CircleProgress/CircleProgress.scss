@@ -10,6 +10,10 @@
   @include breakpoint(768px, 1199px) {
     height: 67%;
   }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    width: 64% !important;
+    height: 92% !important;
+  }
 }
 .CircleProgress {
   width: 96%;
@@ -21,6 +25,7 @@
     height: 76%;
     width: 98%;
     align-items: flex-start;
+    margin-top: 3vh;
   }
   @include breakpoint(576px, 767px) {
     height: 46%;
@@ -31,6 +36,11 @@
     height: 85%;
     width: 50%;
     align-items: center;
+  }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    height: 76% !important;
+    width: 50% !important;
+    margin-top: 2rem !important;
   }
 }
 

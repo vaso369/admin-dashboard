@@ -8,6 +8,7 @@ import './Header.scss'
 
 const Header = () => {
   const { theme } = useSelector((state) => state.theme)
+  // console.log(theme)
   const toggleMenu = () => {
     document.getElementsByClassName('sidebar-nav')[0].classList.toggle('hamburger-toggle')
     document.getElementsByClassName('sidebar-nav-section')[0].classList.toggle('hamburger-toggle')
@@ -34,14 +35,23 @@ const Header = () => {
             <Search width="col-lg-8 col-xl-2" />
             <div className="header-nav-user row">
               <div className="hamburger-menu" onClick={toggleMenu}>
-                <div />
-                <div />
-                <div />
+                <div style={{
+                  background: theme === 'dark-theme' ? '#d1d3d4' : '#1c5b7b',
+                }}
+                />
+                <div style={{
+                  background: theme === 'dark-theme' ? '#d1d3d4' : '#1c5b7b',
+                }}
+                />
+                <div style={{
+                  background: theme === 'dark-theme' ? '#d1d3d4' : '#1c5b7b',
+                }}
+                />
               </div>
               <ThemeSelector />
               <Notification fill={theme === 'dark-theme' ? '#e8e7e7' : '#1c5b7b'} />
               <User fill={theme === 'dark-theme' ? '#e8e7e7' : '#1c5b7b'} />
-              <p>John Doe</p>
+              <p>Петар</p>
             </div>
           </div>
         </div>

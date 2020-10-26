@@ -68,10 +68,23 @@
     width: 100%;
     margin-right: 0; } }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .header-nav-user {
+    max-width: 50%;
+    flex-direction: row-reverse; } }
+
 @media (max-device-width: 767px) {
   .header-nav {
     margin: 0 !important;
     padding: 5vw !important; } }
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .header-nav {
+    padding: 1vw !important; }
+  .header-nav .form {
+    max-width: 35%; }
+  .header-nav-nav-user {
+    max-width: 20%; } }
 
 @media (min-device-width: 768px) and (max-device-width: 1199px) {
   .header-nav {

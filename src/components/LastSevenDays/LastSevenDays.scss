@@ -29,4 +29,12 @@
       transform: translate(0rem, 2.2rem);
     }
   }
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    & > div:nth-of-type(2) {
+      height: 80vh !important;
+    }
+    .recharts-responsive-container {
+      width: 109% !important;
+    }
+  }
 }

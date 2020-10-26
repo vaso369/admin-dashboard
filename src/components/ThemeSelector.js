@@ -11,7 +11,7 @@ const ThemeSelector = () => {
   const [showSettings, setShowSettings] = useState(false)
   const dispatch = useDispatch()
   const { theme } = useSelector((state) => state.theme)
-  const color = theme === 'dark-theme' ? '#e8e7e7' : '#174359'
+  const color = theme === 'dark-theme' ? '#e8e7e7' : '#1c5b7b'
   const color2 = theme === 'dark-theme' ? '#174359' : '#e8e7e7'
   const setttingsToggle = () => {
     setShowSettings((prevSettins) => !prevSettins)
@@ -53,6 +53,7 @@ const ThemeSelector = () => {
             fontSize: '1rem',
           }}
           id="theme"
+          value={theme}
           onChange={(e) => dispatch(setTheme(e.target.value))}
         >
           {Object.entries(themeNames).map(([key, value]) => (

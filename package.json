@@ -2,6 +2,7 @@
   "name": "constraint",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vaso369.github.io/admin-dashboard",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -41,7 +42,8 @@
     "new:comp:layout": "npx generate-react-cli component --type=layout",
     "new:redux:files": "node src/utilities/redux-generator.js",
     "release": "standard-version",
-    "figma": "node figma/main.js"
+    "figma": "node figma/main.js",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

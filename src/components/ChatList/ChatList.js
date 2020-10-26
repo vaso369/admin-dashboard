@@ -6,58 +6,58 @@ import './ChatList.scss'
 
 const ChatList = () => (
   <div className="chat-list" data-testid="ChatList">
-    <h2 className="reusable-heading-border-bottom">Chat</h2>
+    <h2 className="reusable-heading-border-bottom">Ћаскање</h2>
     <div className="chat-list-items">
       <div className="chat-list-item">
         <div className="chat-list-item-img">
           <img src={chatImg} alt="" />
           <div className="chat-list-item-img-status" />
         </div>
-        <p>Mary Robbinson</p>
+        <p>Марија Петровић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
 
-          <div className="chat-list-item-img-no flex-center-r">J</div>
+          <div className="chat-list-item-img-no flex-center-r">Ј</div>
           <div className="chat-list-item-img-status c-gray" />
 
         </div>
-        <p>Jane Cooper</p>
+        <p>Јован Јовановић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
-          <div className="chat-list-item-img-no flex-center-r">R</div>
+          <div className="chat-list-item-img-no flex-center-r">М</div>
           <div className="chat-list-item-img-status" />
         </div>
-        <p>Robert Fox</p>
+        <p>Милан Симовић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
           <img src={chatImg2} alt="" />
           <div className="chat-list-item-img-status c-gray" />
         </div>
-        <p>Cameron Williamson</p>
+        <p>Катарина Симић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
-          <div className="chat-list-item-img-no flex-center-r">R</div>
+          <div className="chat-list-item-img-no flex-center-r">М</div>
           <div className="chat-list-item-img-status c-gray" />
         </div>
-        <p>Robert Fox</p>
+        <p>Милош Милошевић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
-          <div className="chat-list-item-img-no flex-center-r">R</div>
+          <div className="chat-list-item-img-no flex-center-r">М</div>
           <div className="chat-list-item-img-status c-gray" />
         </div>
-        <p>Robert Fox</p>
+        <p>Милица Радојичић</p>
       </div>
       <div className="chat-list-item">
         <div className="chat-list-item-img">
-          <div className="chat-list-item-img-no flex-center-r">R</div>
+          <div className="chat-list-item-img-no flex-center-r">Д</div>
           <div className="chat-list-item-img-status c-gray" />
         </div>
-        <p>Robert Fox</p>
+        <p>Димитрије Стојковић</p>
       </div>
     </div>
 
